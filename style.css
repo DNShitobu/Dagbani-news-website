@@ -1,0 +1,58 @@
+/* Root Variables */
+:root {
+    --primary-color: #d32f2f;
+    --secondary-color: #212121;
+    --accent-color: #ffd700;
+    --background-color-light: #fff;
+    --text-color-light: #000;
+    --background-color-dark: #121212;
+    --text-color-dark: #e0e0e0;
+}
+
+/* Base Styles */
+body {
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.dark-mode {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+}
+
+.breaking-news-ticker {
+    background: var(--primary-color);
+    color: white;
+    padding: 8px 0;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.ticker-content {
+    display: inline-block;
+    animation: ticker 20s linear infinite;
+}
+
+@keyframes ticker {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+.news-card {
+    transition: transform 0.3s ease;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+}
+
+.section-title {
+    border-left: 5px solid var(--primary-color);
+    padding-left: 15px;
+    margin: 30px 0;
+}
+
+.navbar.sticky {
+    background-color: var(--primary-color);
+}
