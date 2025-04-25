@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="dag">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dagbani News Portal</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Breaking News Ticker -->
+    <div class="breaking-news-ticker">
+        <div class="ticker-content">
+            🔴 Kaya viɛnyɛlim: Dagbon nam kpema ni tuma palli zaŋ chaŋ tiŋgbani viɛnyɛlim polo • 
+            Tudu kam nam' yɛli ni bɛ ni niŋ tuma palli zaŋ chaŋ ninkura suhudoo polo • 
+            Naa Mahama zaŋ ligdi ti sukuu bihi
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Dagbani News</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Yiko</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Politiksi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Adenya</a></li>
+                </ul>
+                <div class="form-check form-switch me-3">
+                    <input class="form-check-input" type="checkbox" id="darkModeToggle">
+                    <label class="form-check-label text-light" for="darkModeToggle">Dark Mode</label>
+                </div>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Vihi...">
+                    <button class="btn btn-outline-light" type="submit">Vihi</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Carousel -->
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/images/placeholder.jpg" class="d-block w-100" alt="News">
+                <div class="carousel-caption">
+                    <h2>Dagbon Nam kpema ni tuma palli</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Latest News Section -->
+    <section class="container my-5">
+        <h2 class="section-title">Lahabali Paɣa</h2>
+        <div class="row g-4">
+            <!-- Add more cards dynamically -->
+            <!-- Card Template -->
+            <div class="col-md-4">
+                <div class="card news-card h-100">
+            <figure
+  </fields=[]=>
+  <img src="assets/images/news1.jpg" class="card-img-top" alt="News">
+  <div class="card-body">
+      <h5 class="card-title">Dagbon Nam Kpema Lahabali</h5>
+      <p class="card-text">Dagbon nam kpema ni tuma palli zaŋ chaŋ tiŋgbani viɛnyɛlim polo...</p>
+      <div class="d-flex justify-content-between">
+          <a href="#" class="btn btn-primary">Karimi Pahi</a>
+          <div>
+              <a href="#" class="text-secondary me-2"><i class="fab fa-facebook"></i></a>
+              <a href="#" class="text-secondary me-2"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="text-secondary"><i class="fab fa-whatsapp"></i></a>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+
+<!-- Repeat Cards -->
+<div class="col-md-4">
+<div class="card news-card h-100">
+  <img src="assets/images/news2.jpg" class="card-img-top" alt="News">
+  <div class="card-body">
+      <h5 class="card-title">Naa Mahama Ligdi Sukuu Bihi</h5>
+      <p class="card-text">Naa Mahama zaŋ ligdi ti sukuu bihi su yeli yɛm...</p>
+      <div class="d-flex justify-content-between">
+          <a href="#" class="btn btn-primary">Karimi Pahi</a>
+          <div>
+              <a href="#" class="text-secondary me-2"><i class="fab fa-facebook"></i></a>
+              <a href="#" class="text-secondary me-2"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="text-secondary"><i class="fab fa-whatsapp"></i></a>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card news-card h-100">
+  <img src="assets/images/news3.jpg" class="card-img-top" alt="News">
+  <div class="card-body">
+      <h5 class="card-title">Dagbon Lahabali Kam</h5>
+      <p class="card-text">Tudu kam nam' yɛli ni bɛ ni niŋ tuma palli...</p>
+      <div class="d-flex justify-content-between">
+          <a href="#" class="btn btn-primary">Karimi Pahi</a>
+          <div>
+              <a href="#" class="text-secondary me-2"><i class="fab fa-facebook"></i></a>
+              <a href="#" class="text-secondary me-2"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="text-secondary"><i class="fab fa-whatsapp"></i></a>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-light py-5">
+<div class="container">
+<div class="row">
+<div class="col-md-3">
+  <h5>About Us</h5>
+  <p>Dagbani News Portal provides trusted news on Dagbon and beyond. Stay updated with reliable insights.</p>
+</div>
+<div class="col-md-3">
+  <h5>Quick Links</h5>
+  <ul class="list-unstyled">
+      <li><a href="#" class="text-light">Yiko</a></li>
+      <li><a href="#" class="text-light">Politiksi</a></li>
+      <li><a href="#" class="text-light">Adenya</a></li>
+      <li><a href="#" class="text-light">Dagbon Lahabali</a></li>
+  </ul>
+</div>
+<div class="col-md-3">
+  <h5>Contact Us</h5>
+  <p><i class="fas fa-envelope"></i> contact@dagbaninews.com</p>
+  <p><i class="fas fa-phone"></i> +233 24 000 0000</p>
+  <p><i class="fas fa-map-marker-alt"></i> Tamale, Ghana</p>
+</div>
+<div class="col-md-3">
+  <h5>Follow Us</h5>
+  <a href="#" class="text-secondary me-3"><i class="fab fa-facebook fa-2x"></i></a>
+  <a href="#" class="text-secondary me-3"><i class="fab fa-twitter fa-2x"></i></a>
+  <a href="#" class="text-secondary"><i class="fab fa-whatsapp fa-2x"></i></a>
+</div>
+</div>
+<hr class="bg-light">
+<div class="text-center">&copy; 2024 Dagbani News Portal | All Rights Reserved</div>
+</div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+<!-- Custom JS -->
+<script src="scripts.js"></script>
+</body>
+</html>
